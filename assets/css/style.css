@@ -1,0 +1,286 @@
+body {
+    margin-top: 10px;
+}
+
+header .line_sup {
+    background-color: #1E90FF;
+    height: 13px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.button {
+    display: inline-block;
+    border: 2px solid #454545;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #454545;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #454545;
+}
+
+.bar {
+    background-color: #1E90FF;
+    width: 180px;
+    height: 22px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 50px;
+    font-size: 95px;
+    color: gainsboro;
+    line-height: 100px;
+}
+
+h2 {
+    font-size: 35px;
+    color: black;
+}
+
+.header--area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.header--left img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid#1E90FF;
+    border-radius: 50%;
+}
+
+.header--rigth {
+    display: flex;
+    align-items: center;
+}
+
+.header--search form {
+    display: flex;
+}
+
+.header--search input {
+    font-size: 16px;
+    padding: 8px 12px;
+    border: 1px solid #000000;
+    outline: 0;
+    width: 100%;
+    max-width: 220px;
+    border-radius: 50px;
+}
+
+.header--search button {
+    border: 0;
+    background-color: transparent;
+    margin-left: -40px;
+    cursor: pointer;
+}
+
+.header--search button img {
+    width: 160;
+    height: 160;
+}
+
+.header--menu {
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.header--menu img {
+    width: 25px;
+    height: 25px;
+}
+
+.banner {
+    margin: 10px;
+    margin-top: 0px;
+    background-image: url('../images/ideia.png');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 1px;
+    padding-bottom: 30px;
+}
+
+.banner span {
+    color: gainsboro;
+    margin: 50px;
+    line-height: 0px;
+    font-size: 25px;
+}
+
+.banner--images img {
+    width: 170px;
+    height: 170px;
+    border: 4px solid #00CED1;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.area1 {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area1--content {
+    padding: 80px;
+}
+
+.area1--quote {
+    margin-bottom: 15px;
+}
+
+.area1--text {
+    margin-bottom: 25px;
+    line-height: 20px;
+}
+
+.area1--img1 {
+    height: 300px;
+    background-image: url('../images/image\ area\ 2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.area1--img2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-image: url('../images/image\ area\ 1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.area2 {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area2--content {
+    padding: 80px;
+}
+
+.area2--quote {
+    margin-bottom: 15px;
+}
+
+.area2--text {
+    margin-bottom: 25px;
+    line-height: 20px;
+}
+
+.area2--img1 {
+    height: 480px;
+    background-image: url('../images/image\ area1.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+.area3 {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area3--content {
+    padding: 80px;
+}
+
+.area3--quote {
+    margin-bottom: 15px;
+}
+
+.area3--text {
+    margin-bottom: 25px;
+    line-height: 20px;
+}
+
+.area3--img1 {
+    height: 480px;
+    background-image: url('../images/image\ area\ 3.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+@media (min-width: 769) and (max-width: 1140px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 426) and (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .area1,
+    .area2,
+    .area3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header--menu {
+        margin-left: 20px;
+    }
+    .header--search {
+        max-width: 110px;
+    }
+    h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .banner--images img {
+        width: 50px;
+        height: 50px;
+        border: 2px solid #00CED1;
+        border-radius: 50%;
+        margin-right: -30px;
+    }
+    .header--left img {
+        width: 60px;
+        height: 60px;
+        border: 2px solid#1E90FF;
+        border-radius: 50%;
+    }
+    .area1,
+    .area2,
+    .area3 {
+        grid-template-columns: 1fr;
+    }
+    .area1--content,
+    .area2--content,
+    .area3--content {
+        padding: 40px;
+    }
+    footer {
+        font-size: 12px;
+        padding: 40px 20px;
+    }
+}
